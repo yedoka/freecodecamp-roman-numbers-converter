@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --dark: #1e1e1e;
+  --lighter-dark: #2e2e2e;
+  --white: #fff;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+#number {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#convert-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#convert-btn:hover {
+  background-color: var(--lighter-dark);
+}
+
+#output {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #number {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  #convert-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  #output {
+    font-size: 1.1rem;
+  }
+}
